@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DD.NameSorter.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "./unsorted-names-list.txt"
+    }
+  }
+}
