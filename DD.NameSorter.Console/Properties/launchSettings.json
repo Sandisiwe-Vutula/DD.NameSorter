@@ -2,6 +2,10 @@
   "profiles": {
     "DD.NameSorter.Console": {
       "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      },
       "commandLineArgs": "./unsorted-names-list.txt"
     }
   }

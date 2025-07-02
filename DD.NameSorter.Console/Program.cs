@@ -20,7 +20,8 @@
         }
 
         var inputPath = Path.GetFullPath(args[0]);
-        var outputPath = "sorted-names-list.txt";
+        var outputPath = Path.Combine(Directory.GetCurrentDirectory(), "sorted-names-list.txt");
+
 
         if (!File.Exists(inputPath))
         {
@@ -30,6 +31,8 @@
 
         try
         {
+            Console.WriteLine("************** Dye & Durham Name Sorter ******************");
+
             var names = await fileService.ReadNamesAsync(inputPath);
             var sortedNames = sorter.SortNames(names);
 
